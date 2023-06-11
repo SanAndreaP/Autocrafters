@@ -1,0 +1,76 @@
+{
+  "objectName" : "autocrafter",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Rare",
+  "description" : "Automatically process/craft things with the object next to it.",
+  "shortdescription" : "^orange;Autocrafter^white;",
+  "subtitle" : "Automates crafting stations",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 1250,
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "printable" : false,
+  "health" : 1.5,
+
+  "apexDescription" : "This machine automates various crafting stations.\n\n^blue;Input^white;1^blue;: ^white;On/Off switch\n^blue;Input^white;2^blue;: ^white;item network\n^red;Output: ^white;item network^reset;",
+  "avianDescription" : "A machine that can automate my crafting stations.\n\n^blue;Input^white;1^blue;: ^white;On/Off switch\n^blue;Input^white;2^blue;: ^white;item network\n^red;Output: ^white;item network^reset;",
+  "floranDescription" : "Machine automatesss craftsss.\n\n^blue;Input^white;1^blue;: ^white;On/Off switch\n^blue;Input^white;2^blue;: ^white;item network\n^red;Output: ^white;item network^reset;",
+  "glitchDescription" : "Reliefed. A machine which automates crafting.\n\n^blue;Input^white;1^blue;: ^white;On/Off switch\n^blue;Input^white;2^blue;: ^white;item network\n^red;Output: ^white;item network^reset;",
+  "humanDescription" : "I can automate crafting stations with this machine.\n\n^blue;Input^white;1^blue;: ^white;On/Off switch\n^blue;Input^white;2^blue;: ^white;item network\n^red;Output: ^white;item network^reset;",
+  "hylotlDescription" : "A device for automating crafting stations.\n\n^blue;Input^white;1^blue;: ^white;On/Off switch\n^blue;Input^white;2^blue;: ^white;item network\n^red;Output: ^white;item network^reset;",
+  "novakidDescription" : "An autocrafter machine. I can finally be relaxin'!\n\n^blue;Input^white;1^blue;: ^white;On/Off switch\n^blue;Input^white;2^blue;: ^white;item network\n^red;Output: ^white;item network^reset;",
+
+  "lightColor" : [107, 149, 179],
+
+  "flickerPeriod" : 0.5,
+  "flickerMinIntensity" : 0.98,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.075,
+  "flickerIntensityVariance" : 0.0025,
+
+  "inventoryIcon" : "autocraftericon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "autocrafter.png:<color>.<frame>", "fullbright" : true } ],
+      "direction" : "left",
+
+      "imagePosition" : [0, 0],
+      "frames" : 4,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "autocrafter.png:<color>.<frame>", "fullbright" : true } ],
+      "direction" : "right",
+      "flipImages" : true,
+
+      "imagePosition" : [0, 0],
+      "frames" : 4,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/checkpoint_loop.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+
+  "statusEffects" : [ ],
+
+	"inputNodes" : [[0,1], [0,0]],
+	"outputNodes" : [[1,0]],
+	"kheAA_inDataNode":1,
+	"kheAA_outDataNode":0,
+
+  "openSounds" : [ "/sfx/objects/mechbeacon_pulse1.ogg" ],
+  "slotCount" : 13,
+  "uiConfig" : "/sanandreap/interface/objectcrafting/autocrafter.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600,
+  "scripts": [ "/sanandreap/objects/crafting/autocrafter/autocrafter.lua" ],
+  "scriptDelta": 30
+}

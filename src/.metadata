@@ -1,0 +1,11 @@
+{
+  "name" : "autocrafters",
+  "friendlyName" : "Autocrafters",
+  "description" : "Attempts to add machines that autocraft stuff",
+  "author" : "SanAndreaP",
+  "version" : "1.0.0",
+  "steamContentId" : "000000001",
+  "tags" : "Crafting and Building",
+  "priority" : 0,
+  "requires": ["AutomationAides"]
+}

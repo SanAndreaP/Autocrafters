@@ -1,0 +1,11 @@
+"workshopitem"
+{
+    "appid"           "211820"
+    "publishedfileid" "0"
+    "contentfolder"   "/run/media/sanandreap/DatenLinux/Dev/Starbound/Autocrafters/publish"
+    "previewfile"     "/run/media/sanandreap/DatenLinux/Dev/Starbound/Autocrafters/resources/preview.jpg"
+    "visibility"      "2"
+    "title"           "Autocrafters"
+    "description"     "This mod adds devices that allow you to automatically craft things."
+    "changenote"      "Initial Release"
+}

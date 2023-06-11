@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "network_containerlink", "count" : 1 },
+    { "item" : "siliconboard", "count" : 1 },
+    { "item" : "stickofram", "count" : 2 },
+    { "item" : "battery", "count" : 1 },
+    { "item" : "wire", "count" : 5 },
+    { "item" : "durasteelbar", "count" : 5 }
+  ],
+  "output" : { "item" : "autocrafter", "count" : 1 },
+  "groups" : [ "craftingwiring", "mechanics" ]
+}

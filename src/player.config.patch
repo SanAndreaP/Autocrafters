@@ -1,0 +1,5 @@
+[
+    {"op": "add", "path": "/defaultBlueprints/tier1/0", "value": { "item": "autocrafter" }},
+    {"op": "add", "path": "/defaultBlueprints/tier1/0", "value": { "item": "autocrafterfridge" }},
+    {"op": "add", "path": "/defaultBlueprints/tier1/0", "value": { "item": "foodstacker" }}
+]

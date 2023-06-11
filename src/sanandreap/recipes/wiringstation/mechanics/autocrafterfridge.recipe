@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "autocrafter", "count" : 5 },
+    { "item" : "cryonicextract", "count" : 2 }
+  ],
+  "output" : { "item" : "autocrafterfridge", "count" : 1 },
+  "groups" : [ "craftingwiring", "mechanics" ]
+}

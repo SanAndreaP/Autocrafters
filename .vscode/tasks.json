@@ -1,0 +1,34 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "unpack assets",
+            "type": "process",
+            "command": "./.starbound/linux/asset_unpacker",
+            "args": ["./.starbound/assets/packed.pak", "./.starbound/unpacked_assets"],
+            "windows": {
+                "command": ".\\.starbound\\linux\\asset_unpacker",
+                "args": [".\\.starbound\\assets\\packed.pak", ".\\.starbound\\unpacked_assets"],
+            }
+        },
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "./.vscode/build.sh"
+        },
+        {
+            "label": "test",
+            "type": "shell",
+            "dependsOn": ["build"],
+            "command": "flatpak run com.valvesoftware.Steam -applaunch 367540"
+        },
+        {
+            "label": "publish",
+            "type": "shell",
+            "dependsOn": ["build"],
+            "command": "flatpak run --command=steamcmd com.valvesoftware.Steam +login sanandreap +workshop_build_item ${workspaceFolder}/web/_publish.vdf +quit"
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+  "objectName" : "foodstacker",
+  "colonyTags" : ["cooking", "wired"],
+  "rarity" : "Rare",
+  "description" : "Stacks food within adjacent refridgerated storage.\n^red;Only works if food is stackable!",
+  "shortdescription" : "^orange;Foodstacker^white;",
+  "subtitle" : "Stacks food in fridges",
+  "race" : "generic",
+  "category" : "wire",
+  "price" : 1250,
+  "printable" : false,
+  "health" : 1.5,
+
+  "apexDescription" : "This machine stacks food in a nearby refridgerated storage.\n\n^blue;Input^white;1^blue;: ^white;On/Off switch\n^blue;Input^white;2^blue;: ^white;item network\n^red;Output: ^white;item network^reset;",
+  "avianDescription" : "A machine that can stack food in my fridge.\n\n^blue;Input^white;1^blue;: ^white;On/Off switch\n^blue;Input^white;2^blue;: ^white;item network\n^red;Output: ^white;item network^reset;",
+  "floranDescription" : "Machine stacksss meat.\n\n^blue;Input^white;1^blue;: ^white;On/Off switch\n^blue;Input^white;2^blue;: ^white;item network\n^red;Output: ^white;item network^reset;",
+  "glitchDescription" : "Excited. A machine which is able to stack food.\n\n^blue;Input^white;1^blue;: ^white;On/Off switch\n^blue;Input^white;2^blue;: ^white;item network\n^red;Output: ^white;item network^reset;",
+  "humanDescription" : "I can automate crafting stations with this machine.\n\n^blue;Input^white;1^blue;: ^white;On/Off switch\n^blue;Input^white;2^blue;: ^white;item network\n^red;Output: ^white;item network^reset;",
+  "hylotlDescription" : "A device for stacking food.\n\n^blue;Input^white;1^blue;: ^white;On/Off switch\n^blue;Input^white;2^blue;: ^white;item network\n^red;Output: ^white;item network^reset;",
+  "novakidDescription" : "A food stackin' machine.\n\n^blue;Input^white;1^blue;: ^white;On/Off switch\n^blue;Input^white;2^blue;: ^white;item network\n^red;Output: ^white;item network^reset;",
+
+  "inventoryIcon" : "foodstackericon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "foodstacker.png:<color>.<frame>", "fullbright" : true } ],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "imagePosition" : [0, 0],
+      "frames" : 16,
+      "animationCycle" : 1.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "foodstacker.png:<color>.<frame>", "fullbright" : true } ],
+      "direction" : "right",
+
+      "imagePosition" : [0, 0],
+      "frames" : 16,
+      "animationCycle" : 1.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/checkpoint_loop.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+
+  "statusEffects" : [ ],
+
+	"inputNodes" : [[0,1], [0,0]],
+	"outputNodes" : [[1,0]],
+	"kheAA_inDataNode":1,
+	"kheAA_outDataNode":0,
+
+  "scripts": [ "/sanandreap/objects/foodstacker/foodstacker.lua" ],
+  "scriptDelta": 60
+}

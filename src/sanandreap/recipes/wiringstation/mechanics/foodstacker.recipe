@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "network_containerlink", "count" : 1 },
+    { "item" : "battery", "count" : 1 },
+    { "item" : "wire", "count" : 5 },
+    { "item" : "durasteelbar", "count" : 5 },
+    { "item" : "silverbar", "count" : 2 }
+  ],
+  "output" : { "item" : "foodstacker", "count" : 1 },
+  "groups" : [ "craftingwiring", "mechanics" ]
+}
